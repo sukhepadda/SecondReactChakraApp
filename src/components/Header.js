@@ -42,24 +42,24 @@ function Header() {
           <DrawerHeader>Padda Video Hub</DrawerHeader>
           <DrawerBody>
             <VStack alignItems={'flex-start'}>
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button onClick={onClose} variant={'ghost'} colorScheme={'purple'}>
                 <Link to={'/'}>Home</Link>
               </Button>
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button onClick={onClose} variant={'ghost'} colorScheme={'purple'}>
                 <Link to={'/videos'}>Videos</Link>
               </Button>
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button onClick={onClose} variant={'ghost'} colorScheme={'purple'}>
                 <Link to={'/videos?category=free'}>Free Videos</Link>
               </Button>
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button onClick={onClose} variant={'ghost'} colorScheme={'purple'}>
                 <Link to={'/upload'}>Upload Video</Link>
               </Button>
             </VStack>
             <HStack pos={'absolute'} bottom={'10'} left={'0'} w={'full'} justifyContent={"space-evenly"}>
-              <Button colorScheme={'purple'}>
+              <Button onClick={onClose} colorScheme={'purple'}>
                 <Link to={'/login'}>Login</Link>
               </Button>
-              <Button colorScheme={'purple'}>
+              <Button onClick={onClose} colorScheme={'purple'}>
                 <Link to={'/signup'}>Sign Up</Link>
               </Button>
             </HStack>

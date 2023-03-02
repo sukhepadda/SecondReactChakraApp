@@ -28,45 +28,30 @@ const Home = () => {
 };
 
 const MyCarousel = () => {
-  <Carousel
-    autoPlay
-    infiniteLoop
-    interval={1500}
-    showStatus={false}
-    showThumbs={false}
-    showArrows={false}
-  >
-    <Box w="full" h={'100vh'} {...headingOptions}>
-      <Image src={img1} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'}>
-        Watch the Fututre
-      </Heading>
-    </Box>
-    <Box w="full" h={'100vh'} {...headingOptions}>
-      <Image src={img2} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'}>
-        Watch the Fututre
-      </Heading>
-    </Box>
-    <Box w="full" h={'100vh'} {...headingOptions}>
-      <Image src={img3} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'}>
-        Watch the Fututre
-      </Heading>
-    </Box>
-    <Box w="full" h={'100vh'} {...headingOptions}>
-      <Image src={img4} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'}>
-        Watch the Fututre
-      </Heading>
-    </Box>
-    <Box w="full" h={'100vh'} {...headingOptions}>
-      <Image src={img5} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'}>
-        Watch the Fututre
-      </Heading>
-    </Box>
-  </Carousel>;
+  <Box>
+    <Carousel
+      autoPlay
+      infiniteLoop
+      interval={'1500'}
+      showStatus={false}
+      showThumbs={false}
+      showArrows={false}
+    >
+      <Box w="full" h={'100vh'} {...headingOptions}>
+        <Image src={img1} />
+        <Heading bgColor={'blackAlpha.600'} color={'white'}>
+          Watch the Fututre
+        </Heading>
+      </Box>
+      <Box w="full" h={'100vh'} {...headingOptions}>
+        <Image src={img2} />
+        <Heading bgColor={'blackAlpha.600'} color={'white'}>
+          Watch the Fututre
+        </Heading>
+      </Box>
+    </Carousel>
+    ;
+  </Box>;
 };
 
 export default Home;

@@ -69,7 +69,7 @@ function Header() {
                 variant={'ghost'}
                 colorScheme={'purple'}
               >
-                <Link to={'/upload'}>Upload Video</Link>
+                <Link to={'/uploads'}>Upload Video</Link>
               </Button>
             </VStack>
             <HStack
